@@ -1,0 +1,105 @@
+$textColor : #6a6c6c;
+$blue: #35ccd4;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: cursive;
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+.navbar {
+    width: 100%;
+    position:fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10vh;
+    background-color: rgb(255, 255, 255);
+    color: $textColor;
+   
+   }
+   .nav-links a {
+    color: $textColor
+   }
+   /* LOGO */
+   .logo {
+    padding-left: 5vh;
+    height: 12vh;
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+   .menu li:hover {
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+   .menu li.active{
+    border-bottom: 5px solid  $blue;
+   }
+   /* DROPDOWN MENU */
+   .services {
+    position: relative; 
+   }
+  
+   .first-page{
+   display: block;
+    padding-top: 76px;
+    background-image: url(/source/firstpage.png);
+    width: 100vw;
+    height: 100vh; 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+   }
+   .header{
+    display: inline-flex;
+    display: block;
+    text-align: center;
+    padding-top: 25vh;
+    font-size: 50px;
+   }
+   .center-button{
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+   }
+ .second-page{
+    display: block;
+    padding-top: 30vh;
+    background-image: url(/source/secondpage.png);
+    width: 100vw;
+    height: 100vh; 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+ }
+ .grid-container {
+    display: grid;
+    grid-template-columns: 50vw 50vw ;
+   
+   
+  }
+  .grid-item {
+    padding-top: 5vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 30px;
+    text-align: center;
+    color: $textColor;
+  }
